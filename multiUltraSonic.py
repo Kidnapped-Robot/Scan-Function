@@ -30,14 +30,14 @@ def distanceMeasurement(GPIO_TRIGGER,GPIO_ECHO):
 
     
     for i in range(0,len(echoList)): 
-        channel = GPIO.wait_for_edge(echoList[i], GPIO_RISING)
+        channel = GPIO.wait_for_edge(echoList[i], GPIO.RISING)
         if channel is None:
             print('RISING_ERROR')
         else:
             startTime = time.time()
             sssss
     for j in range(0,len(echoList)): 
-        channell = GPIO.wait_for_edge(echoList[j], GPIO_FALLING)
+        channell = GPIO.wait_for_edge(echoList[j], GPIO.FALLING)
         if channell is None:
             print('FALLING_ERROR')
         else:
